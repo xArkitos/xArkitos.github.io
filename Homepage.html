@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="TopbarScroll.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="content">
+            <img src="Bilder/AF Logo.png" alt="logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a class="contactButton" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    <div id="about-me" class="aboutme">
+        <div class="text fade-in-left">
+          <h1>Anton</h1>
+          <h2>Game Dev | Student</h2>
+        </div>
+        <div class="description fade-in-right">
+          <p>Hey, my name is Anton, I'm 23 years old, and currently studying Game Design and Development.</p>
+        </div>
+      </div>
+    <div id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><p>HTML</p></li>
+            <li><p>CSS</p></li>
+            <li><p>JavaScript</p></li>
+            
+            <li><p>C++</p></li>
+            <li><p>C#</p></li>
+            
+            <li><p>Unity3D</p></li>
+            <li><p>Blender</p></li>
+        </ul>
+    </div>
+    <div id="projects" class="projects">
+        <h1>Games</h1>
+        <div class="games">
+          
+          <div class="empty-game"></div>
+          <a class="Haste" href="Haste.html">
+            <h2>Haste</h2>
+            <button>View More</button>
+          </a>
+          <div class="empty-game2"></div>
+        </div>
+        
+      </div>
+      <div id="contact" class="contact">
+        <h1>Contact</h1>
+        <form action="process_form.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    
+
+</body>
+
+
+
+

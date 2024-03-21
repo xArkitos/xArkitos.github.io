@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #0e0e0e;
+    
+}
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+    z-index: 1000; /* Ensure the topbar stays above other content */
+    transition: 0.3s ease;
+}
+.content{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.topbar.scrolled .logo,
+.topbar.scrolled nav li a,
+.topbar.scrolled .contactButton {
+    color: white;
+    
+}
+
+.topbar.scrolled .contactButton {
+    border-color: white;
+}
+
+.topbar.scrolled .topbar{
+    color:#0e0e0e;
+}
+.topbar.scrolled .logo {
+    color: white; /* Change text color to white */
+    filter: invert(1); /* Invert the colors of the logo image */
+}
+
+
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(30%);
+    transition: all 1s ease;
+    border-right: none;
+    animation-delay: 3s; /* Delay the animation for 3 seconds */
+}
+
+.fade-in-left.active {
+    opacity: 1;
+    text-align: right;
+    animation: fadeInLeft 0.5s ease forwards, border 0.7s ease 0.7s forwards; /* Apply both animations */
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: fadeInRight 0.7s ease 0.7s forwards; /* Delay the animation for 1 second */
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(30%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes border {
+    from {
+        border: none;
+        border-right: 1px black solid;
+    }
+    to {
+        border-right: 1px black solid;
+    }
+}
+
+
+
+
+
+  
+
+  
+  
+
+
+.logo {
+    height: 25px;
+    float: left;
+    padding-left: 10px;
+}
+nav {
+    height: 50px;
+}
+.topbar img{
+    height: 30px;
+    transition: 0.3s ease;
+}
+nav ul {
+    padding-top: 13px;
+    display: flex;
+    align-items: center;
+    
+}
+nav li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 17px;
+    transition: 0.3s ease;
+    
+}
+nav li a {
+    color: #0a0a0a;
+    text-decoration: none;
+    list-style: none;
+    padding: 3px 10px;
+    border-radius: 3%;
+}
+nav li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+
+}
+
+.contactButton{
+    color: black;
+    border: 1px black solid;
+    border-radius: 50px;
+    margin-left: 20px;
+    transition:ease 0.3s;
+    padding: 7px 10px;
+    
+}
+
+.contactButton:hover{
+    background-color: black;
+    color: white;
+    transition:ease 0.3s;
+    text-decoration: none;
+}
+
+.aboutme{
+    height: 600px;
+    background-color: #F2F2F2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    text-align: right;
+    width: 400px;
+    
+    padding-right: 20px;
+    font-size: 22px;
+    background-color: #f2f2f2;
+    z-index: 100;
+    
+    
+    
+}
+
+.text h2{
+    font-size: 25px;
+}
+.text p{
+    padding-top: 10px;
+    
+}
+.description{
+    width: 400px;
+    
+    padding-left: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+.skills{
+    background-color:#F2F2F2;
+    text-align: center;
+    height: 200px;
+    
+    
+    
+}
+.skills ul{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    list-style-type: none;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 500px;
+    
+    
+}
+.skills li{
+    padding: 4px 10px;
+    border: 1px black solid;
+    border-radius: 50px;
+    margin: 0 10px;
+    background-color: #0e0e0e;
+    color: white;
+    margin-top: 10px;
+    
+    
+    
+}
+.projects{
+    color: white;
+    text-align: center;
+}
+
+.projects h1{
+    margin-top: 50px;
+}
+
+
+
+
+.contact{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    height: 500px;
+    
+}
+
+
+
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.email img{
+    height: 30px;
+    
+}
+
+.email p{
+    padding: 10px;
+    font-size: 18px;
+}
+
+.games{
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: 400px ;
+    grid-template-columns: 450px 450px 450px;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    height: 450px;
+    
+}
+
+.projects h1{
+    margin-top: 30px;
+    font-size: 30px;
+    
+    
+    
+    
+}
+
+
+.Haste {
+    position: relative; /* Ensure proper stacking context */
+    opacity: 0; /* Initially hide the element */
+    /* Set border radius */
+    background-image: url('Bilder/img3.png');
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.5s ease, opacity 0.5s ease, transform 0.5s ease; /* Include transform in transition */
+    text-decoration: none;
+    transform: translateY(50%);
+    backdrop-filter: blur(20px);
+}
+
+.Haste.active {
+    opacity: 1;
+    transform: translateY(0); /* Move element from left to right */
+    backdrop-filter: blur(0);
+}
+
+
+.Haste::before {
+  content: ""; /* Create a pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit; /* Inherit background image */
+  background-size: cover;
+  background-position: center;
+  border-radius: inherit; /* Inherit border radius */
+  filter: blur(0); /* Initial blur value */
+  transition: filter 0.3s ease; /* Smooth transition for blur effect */
+}
+
+.Haste:hover {
+    box-shadow: 0 0 0 3px white; /* Apply border effect on hover */
+    transition: filter 0.3s ease;
+  }
+
+.Haste:hover::before {
+  filter: blur(3px); /* Apply blur effect on hover */
+  
+}
+
+.Haste h2,
+.Haste button {
+  position: relative; /* Ensure proper stacking context */
+  z-index: 1; /* Ensure the h2 and button appear above the blurred background */
+}
+
+.Haste h2 {
+  margin-top: 160px;
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  font-size: 40px;
+  transition: 0.3s ease;
+  color: white;
+  
+}
+
+.Haste button {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: transparent;
+  margin-top: 10px;
+  color: white;
+  transition: 0.3s ease;
+  font-size: 20px;
+}
+
+
+
+.Haste:hover h2{
+    margin-top: 130px;
+}
+
+.Haste:hover h2,
+.Haste:hover button {
+  opacity: 1; /* Show h2 and button on hover */
+}
