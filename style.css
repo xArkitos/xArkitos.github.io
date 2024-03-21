@@ -214,7 +214,7 @@ nav li a:hover {
     list-style-type: none;
     margin: auto;
     flex-wrap: wrap;
-    max-width: 500px;
+    max-width: 600px;
     
     
 }
@@ -374,4 +374,58 @@ nav li a:hover {
 .Haste:hover h2,
 .Haste:hover button {
   opacity: 1; /* Show h2 and button on hover */
+}
+
+@media (max-width: 1400px){
+
+    .aboutme{
+        width: 1400px;
+        height: 800px;
+    }
+    
+    .aboutme h2{
+        font-size: 40px;
+        width: 500px;
+        transform: translateX(-120px);
+    }
+
+    .aboutme h1{
+        
+        
+    
+        font-size: 60px;
+        
+        
+    }
+
+    .aboutme p{
+        font-size: 30px;
+        width: 600px;
+    }
+
+   
+
+    .skills{
+        width: 1400px;
+        
+    }
+    .projects{
+        width: 1400px;
+    }
+
+    .contact{
+        width: 1400px;
+        
+
+    }
+
+
+
+    .skills ul li{
+        font-size: 20px;
+    }
+
+    .skills ul{
+       max-width: 1000px;
+    }
 }
